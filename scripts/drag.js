@@ -161,7 +161,7 @@ $(function () { /* Simplified this in order to future-proof the code */
 						On smartphones, you'll have to do this manually after saving.
 						(I have no interest in accessing anyone's phone file system, due to privacy concerns. This is why you have to do it after the fact in that case.) */
 					window.saveAs(
-						blob, 'my_doll.webp', canvas.toDataURL('image/webp'),
+						blob, 'my_doll.png', canvas.toDataURL('image/png'),
 					);
 				} catch (e) {
 					alert(e); /* Make sure to run this project on a web server! Otherwise you might get an error when trying to save the image (especially with Firefox, due to its CORS policy).
@@ -198,7 +198,7 @@ $(function () { /* Simplified this in order to future-proof the code */
 			canvas.toBlob(function (blob) {
 				try {
 					window.saveAs(
-						blob, 'my_doll_avi.webp', canvas.toDataURL('image/webp'),
+						blob, 'my_doll_avi.png', canvas.toDataURL('image/png'),
 					);
 				} catch (e) {
 					alert(e);
