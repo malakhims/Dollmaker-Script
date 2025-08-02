@@ -12,6 +12,7 @@ This script works with PHP, but it works with JavaScript too so static hosts lik
 
 INSTRUCTIONS
 
+- This can just be plopped in an existing site the way it is and the directory's name can be changed at any time, so make as many dollmakers as you want!!
 - Images uploading in bases will be one of the default skin tones.
 - (You could technically not use this at all and have the bodies be placeable if you want, but I found it to be kind of a pain for my purposes this time, but it has a lot of potential for larger games)
 - The template is ugly on purpose!! Edit the CSS and make it beautiful!! Put your SOUL INTO IT.
@@ -32,4 +33,5 @@ I included the links the OldReadMes in case they provide original context and he
 - https://github.com/lottev1991/Dollmaker-NEO
 
 I couldn't do this without those original people so thank you!!!
+
 
