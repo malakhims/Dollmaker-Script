@@ -1,7 +1,8 @@
-Ophagirl Dollmaker Script
+Ophagirl Dollmaker Template
 ==========================
 
-Hi!! This is a heavily modified script! I didn't write all of it myself for those coming from off of github!!
+Hi!! This is a heavily modified script! I didn't write all of it myself for those coming from off of github!! I just fixed a lot of broken code and updated old user code!! I redid a lot of the CSS
+but some of the old stuff is still in there haha.
 
 It's originally from Ninique and I heavily edited another fork called Dollmaker NEO that didn't work for me out of the box 
 and had some weird bugs!! I thought the instructions in the original files could be a bit confusing, so I tried to simplify them. 
@@ -36,6 +37,7 @@ I included the links the OldReadMes in case they provide original context and he
 - https://github.com/lottev1991/Dollmaker-NEO
 
 I couldn't do this without those original people so thank you!!!
+
 
 
 
