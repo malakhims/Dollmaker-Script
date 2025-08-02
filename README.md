@@ -28,8 +28,8 @@ STATIC ONLY USERS
 
 I included the links the OldReadMes in case they provide original context and here are the links to the original repositories.
 
+- https://github.com/ninique/Dollmaker-Script
+- https://github.com/lottev1991/Dollmaker-NEO
 
-https://github.com/ninique/Dollmaker-Script
-https://github.com/lottev1991/Dollmaker-NEO
-
+I couldn't do this without those original people so thank you!!!
 
