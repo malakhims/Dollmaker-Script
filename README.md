@@ -14,6 +14,7 @@ INSTRUCTIONS
 
 - Images uploading in bases will be one of the default skin tones.
 - (You could technically not use this at all and have the bodies be placeable if you want, but I found it to be kind of a pain for my purposes this time, but it has a lot of potential for larger games)
+- The template is ugly on purpose!! Edit the CSS and make it beautiful!! Put your SOUL INTO IT.
 
 PHP USERS
 - If you have PHP, any subdirectory you make in the images directory will show up in the tabs. Make sure you trim the images for the final dollmaker so there's not a lot of space.
@@ -30,4 +31,5 @@ I included the links the OldReadMes in case they provide original context and he
 
 https://github.com/ninique/Dollmaker-Script
 https://github.com/lottev1991/Dollmaker-NEO
+
 
