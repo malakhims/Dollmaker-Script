@@ -1,0 +1,97 @@
+/*Styling for the entire page,
+can set bg images here*/
+
+html {
+    background-image: None;
+    background-color: rgb(255, 255, 255); 
+    background-repeat: repeat-y /* Set to repeat if using a tiled background */
+    background-size: 10%; /* If you plan on using a tiled background, or simply don't want your image to be resized, you can remove this part altogether. Otherwise you might get ugly stretching. I do recommend it for CSS gradients though, which is why I used it here. */
+    background-attachment: fixed; /* I like fixed backgrounds, so I set it that way. You can change this for your own theme. */
+    scrollbar-color: #6c6d47 #A068FF; /* Fancy scrollbar stylings */
+}
+
+/*default text color*/
+
+body {
+    color: #462c2c;
+}
+
+/* Use custom fonts for stuff that you wanna use it for */
+h1,h2, button, #page-header a,#page-subheader a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*TITLE*/
+
+#page-header {
+    color: #2e2713;
+}
+
+/*BELOWTITLE*/
+#page-subheader {
+    color: #787878;
+}
+
+#page-subheader a {
+    color: #a9a2a0;
+    transition: 0.3s;
+}
+
+#page-subheader a:hover {
+    color: black;
+}
+
+button {
+    color: #554d42;
+    background-color: #adadadd3;
+    outline: 1px solid #3f2b2b;
+    border: 0;
+}
+
+/* Button hover styling */
+button:hover {
+    background-color: #d2d2d2b5;
+    color: black;
+    outline: 1px solid black;
+    border: 0;
+}
+
+/* This specifies styles that will affect all the boxes. Change to your own colors!*/
+#bodyArea,#swatchesArea,.ui-tabs-panel {
+    outline: 1px solid #3f2b2b; /* Switched border with outline, to prevent offset issues on mobile */
+    background: #e4e4e4;
+}
+
+#swatchesArea a {
+    outline: 1px solid #3f2b2b;
+}
+
+#swatchesArea a:hover {
+	outline: 1px solid black;
+}
+
+#tabsbar li a {
+   border: 1px solid #3f2b2b;
+   border-bottom: 3px solid #b5b5b5be;
+   background-color: #ffffff;
+   color: #444444;
+}
+
+/* Tabs hover styling, only for unselected tabs */
+#tabsbar .ui-state-default a:hover {
+    border-bottom: 3px solid 9898989c;
+    background-color: #939393;
+}
+
+#tabsbar .ui-state-active a,#tabsbar .ui-state-active a:hover {
+    border-bottom: 3px solid #9898989c;
+    background-color: #9898989c;
+}
+
+/* Anti Right-click */
+/* Commented out by default since I don't care for it. Feel free to uncomment it for your own project. */
+/* #anti-rightclick {
+    background: #6c6d47;
+    border: 1px solid #3f2b2b;
+} */

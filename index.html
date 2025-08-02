@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta name="viewport" http-equiv="Content-Type">
+	<title id="title">doll maker template</title>
+
+	<!---THE STYLESHEET--->
+	<link id="main-css" rel="stylesheet" type="text/css" href="styles/mainstylesheet.css" charset="utf-8">
+	<link id="colors-css" rel="stylesheet" type="text/css" href="styles/colors.css" charset="utf-8">
+
+
+	<!--JQUERY, JQUERYUI, TOUCH PUNCH, FILESAVER, HTML2CANVAS, HTML2CANVAS FORK, DRAGANDDROP-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@rwap/jquery-ui-touch-punch@1.1.5/jquery.ui.touch-punch.min.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lottev1991/html2canvas@1.6.5-custom/dist/html2canvas.min.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="scripts/drag.js"></script>
+
+</head>
+<body>
+<!----
+===============
+===============
+===============
+
+Title 
+And Subtitle 
+at top of page 
+
+
+===============
+===============
+===============
+---->
+
+	<h1 id="page-header">DOLLMAKER TEMPLATE</h1>
+	<h2 id="page-subheader">yippie yippie yay yay</a></h2>
+
+	<!----
+	===============
+	===============
+	===============
+
+	You edit these in the CSS file.
+	I really recommend not touching area in the HTML itself
+
+
+	===============
+	===============
+	===============
+	---->
+
+	<div id="dollmaker_container">
+
+
+		<div id="bodyArea" class="ui-corner-all" title="Make your doll here.">
+			<img id="Doll-background" class="clickable">
+
+			<div id="avi-area"></div>
+	
+		</div>
+
+
+
+			<!----
+			===============
+			===============
+			===============
+
+			The sidebar containing the avatar and instructions. 
+			Edit the lis freely but know they have weird default 
+			styling (can easily be changed)
+
+			Buttons are defined in drag.js so you can add more if you'd
+			like 
+
+			I commented out an instruction. You can put it back. More context further down.
+			===============
+			===============
+			===============
+			---->
+
+		<div id="swatchesArea" class="ui-corner-all">
+
+
+
+			<button id="instrBtn" alt="Click here to toggle the instructions for the dollmaker." title="Click here to toggle the instructions for the dollmaker.">Dollmaker instructions</button>
+			
+				<div id="instructions">
+
+				<ul id="instructions-list">
+
+					<li>Drag and drop the <b>items</b> from the middle-right of the page onto the doll above.</li>
+					<li>For easy navigation among the different items, you can click on the <b>tab of your choice</b> at
+						the top of the page.</li>
+					<li>Click on the <b>swatches</b> below to change skin and eye color, as well as the doll background.
+						You choose the eye color per eye, so that you can easily give your doll two different eye colors
+						with any combination of colors.</li>
+					<li>Click on the <b>"Download doll"</b> button below to download your finished doll.</li>
+
+					<!--- <li>Click on the <b>"Download avatar (100x100)"</b> button to download a cropped avatar of your
+						doll.</li>
+					-->
+
+					<li>Click on the <b>"Reset dollmaker"</b> button to reset the dollmaker.</li>
+					<li>Click on the <b>"Toggle fullscreen"</b> button to toggle between fullscreen and windowed mode.
+					</li>
+				</ul>
+			</div>
+
+
+			<!---
+			I added a terms button. 
+			Picrew has this and it's useful.
+			-->
+		<button id="termBtn" alt="Click here for terms" title="Click here for terms.">Terms of Use</button>
+			<div id="terms">
+				<ul id="terms-list">
+					<li>List your terms here</li>
+					<li>Or don't. I'm not your mom.</a>
+					<li>Remember you can include things like if you're okay with recoloring, your repost perms, etc etc</li>
+				</ul>
+			</div>
+			
+
+
+
+
+
+
+
+			<!--- 
+			=========
+			==========
+			=========
+			Quality of Life tools for doll maker players.
+			The original download comes with a download 100x100 icon
+			but I don't think this is a good feature so I've commented it out.
+			======
+			======
+			======
+			-->
+
+
+			<h3>Tools:</h3>
+
+
+
+
+			<button id="downloadDoll" alt="Click here to download your finished doll." title="Click here to download your finished doll.">Download doll</button>
+		
+			<!--
+
+			<button id="downloadAvi" alt="Click here to download a 100x100 avatar of your doll."
+				title="Click here to download a 100x100 avatar of your doll.">Download avatar (100x100)</button>
+
+			--->
+
+
+			<button id="fullscreen"
+				alt="Click here to toggle between fullscreen and windowed mode. (On desktop, you can also press F11.)"
+				title="Click here to toggle between fullscreen and windowed mode. (On desktop, you can also press F11.)"
+				onclick="toggleFullScreen()">Toggle fullscreen</button>
+			<!-- Button to refresh the page, resetting all positions. -->
+			<button id="reset" alt="Click here to reset the dollmaker to its default settings."
+				title="Click here to reset the dollmaker to its default settings.">Reset dollmaker</button>
+
+
+
+						
+		<!----This is where you set up your images by hand, 
+		the part PHP usually takes care of.
+		You can rename any of the directories and add more if you want-->
+
+
+		<!---
+		==========
+		==========
+		==========
+		This is where the bases are defined, the only non-draggable things in the dollmaker. 
+		You link to the full skintone and link the image source as the thumbnail.
+		==========
+		==========
+		==========
+		-->
+			<div id="Skintone-switch" class="switcher">
+				<h3>Skintone:</h3>
+				<a href="base/Skintone/full/01Skin.png">
+					<img src="base/Skintone/thumbnails/01Skin.png">
+				</a>
+				<a href="base/Skintone/full/02Skin.png">
+					<img src="base/Skintone/thumbnails/02Skin.png">
+				</a>
+				<a href="base/Skintone/full/03Skin.png">
+					<img src="base/Skintone/thumbnails/03Skin.png">
+				</a>				
+			</div>
+			
+
+		</div>
+
+
+				
+		<!--These are the drag and droppable pieces. 
+		This part can get really unwieldy, so I recommend splitting large sections
+		into multiple tabs
+		-->
+
+
+		<div id="piecesArea" alt="You can drag pieces from this area." title="You can drag pieces from this area.">
+			<ul id="tabsbar">
+				<li><a href="#tabs-1">Hair</a></li>
+				<li><a href="#tabs-2">Face</a></li>
+				<li><a href="#tabs-3">Tops</a></li>
+				<li><a href="#tabs-4">Bottoms</a></li>
+				<!--Put anymore tabs here in the same format-->
+			</ul>
+
+			<div id="tabs-1">
+							<img alt="" src="images/1Hair/placeholder1.png">
+							<img alt="" src="images/1Hair/placeholder2.png">
+							<img alt="" src="images/1Hair/placeholder3.png">
+			</div>
+
+			<div id="tabs-2">
+							<img alt="" src="images/2Face/placeholder1.png">
+							<img alt="" src="images/2Face/placeholder2.png">
+							<img alt="" src="images/2Face/placeholder3.png">
+							<img alt="" src="images/2Face/placeholder4.png">
+							<img alt="" src="images/2Face/placeholder5.png">
+			</div>
+			<div id="tabs-3">
+							<img alt="" src="images/3Tops/placeholder1.png">
+							<img alt="" src="images/3Tops/placeholder2.png">
+							<img alt="" src="images/3Tops/placeholder3.png">
+			</div>
+			<div id="tabs-4">
+							<img alt="" src="images/4Skirts/placeholder1.png">
+							<img alt="" src="images/4Skirts/placeholder2.png">
+							<img alt="" src="images/4Skirts/placeholder3.png">
+			</div>
+
+
+		</div>
+	</div>
+
+</body>
+
+</html>
