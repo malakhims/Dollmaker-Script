@@ -19,10 +19,12 @@ INSTRUCTIONS
 - The template is ugly on purpose!! Edit the CSS and make it beautiful!! Put your SOUL INTO IT.
 
 PHP USERS
+- Delete index.html
 - If you have PHP, any subdirectory you make in the images directory will show up in the tabs. Make sure you trim the images for the final dollmaker so there's not a lot of space.
 
 STATIC ONLY USERS 
 
+- Delete index.php
 - For those without PHP, this script will be annoying to maintain,  but it can be set up still thanks to the original programmers of the fork and original code! They are so sweet. 
 - I put instructions in index.html. It's straightforward but a bit tedious as you have to define every image yourself.  This is something neocities and other static hosting artists are pretty used to though. You have more patience than I
 
@@ -34,6 +36,7 @@ I included the links the OldReadMes in case they provide original context and he
 - https://github.com/lottev1991/Dollmaker-NEO
 
 I couldn't do this without those original people so thank you!!!
+
 
 
 
